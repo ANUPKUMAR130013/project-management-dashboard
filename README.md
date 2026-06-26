@@ -1,38 +1,40 @@
 # 📊 Project Management Dashboard
 
-A full-stack **Project Management Dashboard** built using the **MERN Stack (MongoDB, Express.js, React.js, Node.js)**. The application helps users manage projects, tasks, reports, and profiles through a clean and responsive dashboard.
+A full-stack **Project Management Dashboard** built using the **MERN Stack (MongoDB, Express.js, React.js, and Node.js)**. This application helps users efficiently manage projects and tasks through a modern and user-friendly dashboard.
 
 ---
 
 ## 🚀 Features
 
-- 🔐 User Authentication (Login & Register)
-- 📊 Dashboard with project statistics
-- 📁 Add, Edit and Delete Projects
-- ✅ Add and Manage Tasks
-- 📈 Reports Dashboard
-- 👤 User Profile Management
-- 💾 Data Persistence
-- 📱 Responsive User Interface
+* 🔐 User Authentication (Login & Register)
+* 📊 Dashboard with project statistics
+* 📁 Create, Edit, and Delete Projects
+* ✅ Add, Update, and Delete Tasks
+* 📈 Reports and Project Summary
+* 👤 User Profile Management
+* 📱 Responsive User Interface
+* 💾 Data Persistence using MongoDB
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-- React.js
-- React Router DOM
-- Axios
-- CSS
-- Vite
+
+* React.js
+* React Router DOM
+* Axios
+* CSS
+* Vite
 
 ### Backend
-- Node.js
-- Express.js
-- MongoDB
-- Mongoose
-- JWT Authentication
-- bcryptjs
+
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* JWT Authentication
+* bcryptjs
 
 ---
 
@@ -40,6 +42,15 @@ A full-stack **Project Management Dashboard** built using the **MERN Stack (Mong
 
 ```
 project-management-dashboard/
+│
+├── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── package.json
+│   └── server.js
 │
 ├── frontend/
 │   ├── src/
@@ -50,160 +61,62 @@ project-management-dashboard/
 │   │   ├── styles/
 │   │   ├── App.jsx
 │   │   └── main.jsx
-│   │
 │   ├── package.json
 │   └── vite.config.js
-│
-├── backend/
-│   ├── config/
-│   ├── controllers/
-│   ├── middleware/
-│   ├── models/
-│   ├── routes/
-│   ├── server.js
-│   └── package.json
 │
 └── README.md
 ```
 
 ---
 
-# ⚙️ Installation
-
-## 1️⃣ Clone the Repository
-
-```bash
-git clone https://github.com/ANUPKUMAR130013/project-management-dashboard.git
-```
-
-Move into the project folder:
-
-```bash
-cd project-management-dashboard
-```
-
----
-
-## 2️⃣ Install Backend Dependencies
-
-```bash
-cd backend
-npm install
-```
-
----
-
-## 3️⃣ Install Frontend Dependencies
-
-Open a new terminal:
-
-```bash
-cd frontend
-npm install
-```
-
----
-
-## 4️⃣ Configure Environment Variables
-
-Create a `.env` file inside the **backend** folder.
-
-Example:
-
-```env
-PORT=5000
-MONGO_URI=YOUR_MONGODB_CONNECTION_STRING
-JWT_SECRET=YOUR_SECRET_KEY
-```
-
-> Do **not** commit your `.env` file to GitHub.
-
----
-
-## ▶️ Run the Backend
-
-```bash
-cd backend
-npm run dev
-```
-
-Backend runs on:
-
-```
-http://localhost:5000
-```
-
----
-
-## ▶️ Run the Frontend
-
-Open another terminal:
-
-```bash
-cd frontend
-npm run dev
-```
-
-Frontend runs on:
-
-```
-http://localhost:5173
-```
-
----
-
-# 📸 Screens
-
-- Login
-- Register
-- Dashboard
-- Projects
-- Tasks
-- Reports
-- Profile
-
----
-
-# 📌 Main Modules
+# ✨ Main Modules
 
 ### Dashboard
-- Total Projects
-- Total Tasks
-- Completed Tasks
-- Pending Tasks
+
+* View total projects
+* View total tasks
+* Completed tasks summary
+* Pending tasks summary
+* Recent projects list
 
 ### Projects
-- Add Project
-- Edit Project
-- Delete Project
+
+* Add new project
+* Edit project details
+* Delete project
+* View project information
 
 ### Tasks
-- Add Task
-- Update Task Status
-- Delete Task
+
+* Add tasks
+* Update task status
+* Delete tasks
+* Track task progress
 
 ### Reports
-- Project Summary
-- Task Summary
-- Completion Percentage
+
+* Project summary
+* Task summary
+* Completion percentage
+* Overall project statistics
 
 ### Profile
-- Update Profile
-- Profile Photo
-- Contact Details
+
+* View profile information
+* Update profile details
 
 ---
 
 # 📡 API Endpoints
 
-### Authentication
+## Authentication
 
 ```
 POST /api/auth/register
 POST /api/auth/login
 ```
 
-### Projects
+## Projects
 
 ```
 GET    /api/projects
@@ -212,7 +125,7 @@ PUT    /api/projects/:id
 DELETE /api/projects/:id
 ```
 
-### Tasks
+## Tasks
 
 ```
 GET    /api/tasks
@@ -223,37 +136,100 @@ DELETE /api/tasks/:id
 
 ---
 
-# 📦 Dependencies
+# ⚙️ Installation
 
-## Backend
+## Clone the Repository
 
-- express
-- mongoose
-- dotenv
-- bcryptjs
-- jsonwebtoken
-- cors
-- nodemon
+```bash
+git clone https://github.com/ANUPKUMAR130013/project-management-dashboard.git
+```
 
-## Frontend
+Move into the project directory:
 
-- react
-- react-router-dom
-- axios
-- vite
+```bash
+cd project-management-dashboard
+```
 
 ---
 
-# 📖 Future Improvements
+## Install Backend Dependencies
 
-- Team Collaboration
-- Role-Based Access
-- File Uploads
-- Email Notifications
-- Calendar Integration
-- Charts & Analytics
-- Dark Mode
-- Real-Time Updates
+```bash
+cd backend
+npm install
+```
+
+---
+
+## Install Frontend Dependencies
+
+Open another terminal and run:
+
+```bash
+cd frontend
+npm install
+```
+
+---
+
+## Run the Backend
+
+```bash
+npm run dev
+```
+
+---
+
+## Run the Frontend
+
+```bash
+npm run dev
+```
+
+---
+
+# 📷 Application Pages
+
+* Login
+* Register
+* Dashboard
+* Projects
+* Tasks
+* Reports
+* Profile
+
+---
+
+# 📦 Major Dependencies
+
+### Backend
+
+* Express.js
+* Mongoose
+* JWT
+* bcryptjs
+* CORS
+* Nodemon
+
+### Frontend
+
+* React
+* React Router DOM
+* Axios
+* Vite
+
+---
+
+# 🎯 Future Enhancements
+
+* Team Collaboration
+* Role-Based Access Control
+* File Upload Support
+* Email Notifications
+* Calendar Integration
+* Analytics Dashboard
+* Dark Mode
+* Real-Time Task Updates
 
 ---
 
@@ -261,7 +237,7 @@ DELETE /api/tasks/:id
 
 **Anup Kumar**
 
-B.Tech (Information Technology)
+B.Tech – Information Technology
 
 Rajkiya Engineering College, Banda
 
@@ -269,4 +245,4 @@ Rajkiya Engineering College, Banda
 
 # 📄 License
 
-This project is created for educational and learning purposes.
+This project is developed for educational and learning purposes.
