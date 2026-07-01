@@ -1,25 +1,76 @@
 # 📊 Project Management Dashboard
 
-A full-stack **Project Management Dashboard** built using the **MERN Stack (MongoDB, Express.js, React.js, and Node.js)**. This application helps users efficiently manage projects and tasks through a modern and user-friendly dashboard.
+A full-stack **Project Management Dashboard** built using the **MERN Stack (MongoDB, Express.js, React.js, and Node.js)**. The application enables users to efficiently plan, organize, monitor, and manage projects and tasks through a secure and user-friendly dashboard.
 
 ---
 
-## 🚀 Features
+# 📋 Internship Details
 
-* 🔐 User Authentication (Login & Register)
-* 📊 Dashboard with project statistics
-* 📁 Create, Edit, and Delete Projects
-* ✅ Add, Update, and Delete Tasks
-* 📈 Reports and Project Summary
-* 👤 User Profile Management
-* 📱 Responsive User Interface
-* 💾 Data Persistence using MongoDB
+| Field             | Details                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Intern ID**     | CITS5513   |                                                                                                                                                                                                                                                                                                                                                                                                       
+| **Full Name**     | Anup Kumar     |                                                                                                                                                                                                                                                                                                                                                                                                          
+| **No. of Weeks**  | 6 Weeks  |                                                                                                                                                                                                                                                                                                                                                                          
+| **Project Name**  | Project Management Dashboard    |                                                                                                                                                                                                                                                                                                                                                                                          
+| **Project Scope** | Designed and developed a full-stack Project Management Dashboard that allows users to create and manage projects, assign and track tasks, monitor project progress, generate reports, and manage user profiles. The system includes secure user authentication, RESTful APIs, MongoDB database integration, responsive user interfaces, and role-based project management features to improve productivity and collaboration. |
 
 ---
 
-## 🛠️ Tech Stack
+# 🚀 Features
 
-### Frontend
+## Authentication
+
+* User Registration
+* Secure Login
+* JWT Authentication
+* Password Encryption
+* Protected Routes
+
+## Dashboard
+
+* View Total Projects
+* View Total Tasks
+* Completed Tasks Summary
+* Pending Tasks Summary
+* Recent Projects
+* Project Statistics
+
+## Project Management
+
+* Create Projects
+* Edit Project Details
+* Delete Projects
+* View Project Information
+* Project Status Tracking
+
+## Task Management
+
+* Add Tasks
+* Update Task Status
+* Delete Tasks
+* Track Task Progress
+* Assign Tasks
+* Due Date Management
+
+## Reports
+
+* Project Summary
+* Task Summary
+* Completion Percentage
+* Productivity Reports
+* Overall Project Statistics
+
+## User Profile
+
+* View Profile
+* Update Profile Information
+* Change Password
+
+---
+
+# 🛠️ Technology Stack
+
+## Frontend
 
 * React.js
 * React Router DOM
@@ -27,7 +78,7 @@ A full-stack **Project Management Dashboard** built using the **MERN Stack (Mong
 * CSS
 * Vite
 
-### Backend
+## Backend
 
 * Node.js
 * Express.js
@@ -38,11 +89,11 @@ A full-stack **Project Management Dashboard** built using the **MERN Stack (Mong
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
-```
+```text
 project-management-dashboard/
-│
+
 ├── backend/
 │   ├── config/
 │   ├── controllers/
@@ -71,39 +122,40 @@ project-management-dashboard/
 
 # ✨ Main Modules
 
-### Dashboard
+## Dashboard
 
-* View total projects
-* View total tasks
-* Completed tasks summary
-* Pending tasks summary
-* Recent projects list
+* Total Projects
+* Total Tasks
+* Completed Tasks
+* Pending Tasks
+* Recent Activities
 
-### Projects
+## Projects
 
-* Add new project
-* Edit project details
-* Delete project
-* View project information
+* Add New Project
+* Edit Project
+* Delete Project
+* Project Details
 
-### Tasks
+## Tasks
 
-* Add tasks
-* Update task status
-* Delete tasks
-* Track task progress
+* Create Tasks
+* Update Task Status
+* Delete Tasks
+* Task Progress Tracking
 
-### Reports
+## Reports
 
-* Project summary
-* Task summary
-* Completion percentage
-* Overall project statistics
+* Project Reports
+* Task Reports
+* Completion Analysis
+* Dashboard Analytics
 
-### Profile
+## Profile
 
-* View profile information
-* Update profile details
+* View Profile
+* Edit Profile
+* Account Management
 
 ---
 
@@ -111,14 +163,14 @@ project-management-dashboard/
 
 ## Authentication
 
-```
+```http
 POST /api/auth/register
 POST /api/auth/login
 ```
 
 ## Projects
 
-```
+```http
 GET    /api/projects
 POST   /api/projects
 PUT    /api/projects/:id
@@ -127,7 +179,7 @@ DELETE /api/projects/:id
 
 ## Tasks
 
-```
+```http
 GET    /api/tasks
 POST   /api/tasks
 PUT    /api/tasks/:id
@@ -142,15 +194,9 @@ DELETE /api/tasks/:id
 
 ```bash
 git clone https://github.com/ANUPKUMAR130013/project-management-dashboard.git
-```
 
-Move into the project directory:
-
-```bash
 cd project-management-dashboard
 ```
-
----
 
 ## Install Backend Dependencies
 
@@ -159,11 +205,9 @@ cd backend
 npm install
 ```
 
----
-
 ## Install Frontend Dependencies
 
-Open another terminal and run:
+Open another terminal.
 
 ```bash
 cd frontend
@@ -172,18 +216,24 @@ npm install
 
 ---
 
-## Run the Backend
+# ▶️ Run the Application
+
+## Backend
 
 ```bash
 npm run dev
 ```
 
----
-
-## Run the Frontend
+## Frontend
 
 ```bash
 npm run dev
+```
+
+The frontend will run on:
+
+```text
+http://localhost:5173
 ```
 
 ---
@@ -202,18 +252,19 @@ npm run dev
 
 # 📦 Major Dependencies
 
-### Backend
+## Backend
 
 * Express.js
+* MongoDB
 * Mongoose
 * JWT
 * bcryptjs
 * CORS
 * Nodemon
 
-### Frontend
+## Frontend
 
-* React
+* React.js
 * React Router DOM
 * Axios
 * Vite
@@ -230,6 +281,20 @@ npm run dev
 * Analytics Dashboard
 * Dark Mode
 * Real-Time Task Updates
+* Project Timeline (Gantt Chart)
+* Mobile Application
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit your changes.
+4. Push the branch.
+5. Open a Pull Request.
 
 ---
 
@@ -237,12 +302,16 @@ npm run dev
 
 **Anup Kumar**
 
-B.Tech – Information Technology
+**B.Tech – Information Technology**
 
-Rajkiya Engineering College, Banda
+**Rajkiya Engineering College, Banda**
+
+**Dr. A.P.J. Abdul Kalam Technical University (AKTU)**
+
+**GitHub:** https://github.com/ANUPKUMAR130013
 
 ---
 
 # 📄 License
 
-This project is developed for educational and learning purposes.
+This project is developed for educational, internship, and learning purposes.
